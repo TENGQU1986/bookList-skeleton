@@ -79,3 +79,14 @@ document.querySelector('#book-form').addEventListener('submit', function(e) {
 
   
 })
+
+// Remove books
+
+document.querySelector('#book-list').addEventListener('click', function(e) {
+  if(e.target.className === 'delete') {
+    e.target.parentElement.parentElement.remove();
+  } else {
+    console.log('doesnot work');
+  }
+  
+});
